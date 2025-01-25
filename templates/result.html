@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="static.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #EAF0FA; /* Light blue background */
+            background-image: url("bg.png");
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: rgba(244, 222, 252, 0.73); /* Light, semi-transparent white box */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+            max-width: 90%; /* Ensures the box is responsive */
+        }
+
+        .header {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4C2A4E; /* Deep purple */
+        }
+
+        .sub-header {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #6F4E77; /* Muted purple */
+        }
+
+        .progress-container {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background: conic-gradient(#bf8ae3 84%, #EAF0FA 0%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            animation: fillProgress 2s ease-out forwards;
+            margin: 0 auto; /* Center the progress circle */
+        }
+
+        @keyframes fillProgress {
+            from {
+                background: conic-gradient(#bf8ae3 0%, #EAF0FA 0%);
+            }
+            to {
+                background: conic-gradient(#bf8ae3 84%, #EAF0FA 0%);
+            }
+        }
+
+        .progress-text {
+            position: absolute;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #40165c; /* White text for better contrast */
+        }
+
+        .explanation {
+            font-size: 1rem;
+            color: #333;
+            margin-top: 20px;
+            max-width: 400px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center; /* Center the buttons */
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #4C2A4E;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #6F4E77;
+        }
+
+        .button:active {
+            background-color: #4C2A4E;
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">Results</div>
+        <div class="sub-header">The following is the accuracy of your answers:</div>
+
+        <div class="progress-container">
+            <div class="progress-text">21/25</div>
+        </div>
+
+        <div class="explanation">
+            You answered 84% of the questions correctly. Keep up the great work and strive for perfection!
+        </div>
+
+        <div class="buttons">
+            <button class="button" onclick="location.href='front.html'">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>
