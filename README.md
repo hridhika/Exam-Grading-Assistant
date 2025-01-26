@@ -130,14 +130,18 @@ Mobile app integration.
 
 # Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1]![WhatsApp Image 2025-01-26 at 09 57 10_5cb1272c](https://github.com/user-attachments/assets/a74755c3-4c37-4269-aee2-6059c07add4d)
+This is the web application'sinitial homepage to upload the  answeer script.It has provision to open into the file folder of the device.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2]![WhatsApp Image 2025-01-26 at 09 57 35_6c2b3d73](https://github.com/user-attachments/assets/ac513555-971b-4cb4-8fa0-885045b97f94)
+
+This web page displays the result on the basis of OCR model, when it was fed to the BERT model.
+
+
+![Screenshot3]![image](https://github.com/user-attachments/assets/66717825-a450-48c9-bc6c-e3052d1ec61d)
+
+This displays how the tscript is recognised and the percentage is represented.
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -169,16 +173,16 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+(https://drive.google.com/file/d/1dxFx-cy5xcQMfoI_HDc_E3WmO6t3sOIa/view?usp=sharing)
+The video demonstrates an innovative solution where a handwritten note or script is first processed using Optical Character Recognition (OCR) technology to extract text. This process begins with the user uploading an image of the handwritten content, which is then preprocessed to enhance clarity and improve OCR accuracy. Preprocessing steps include resizing the image to a standard resolution, enhancing its contrast and brightness, and verifying sharpness to mitigate the impact of blurry inputs. Once the image is optimized, OCR technology (powered by Tesseract) extracts the textual content, which serves as the input for further analysis. The extracted text is then passed through BERT (Bidirectional Encoder Representations from Transformers), a state-of-the-art natural language processing model, to compare its semantic similarity with pre-stored reference values. This comparison determines how closely the handwritten response matches expected answers, providing a powerful tool for evaluating handwritten scripts with precision and efficiency.
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Angelina Rose M: Front End (html,css, integrating)
+-Ann Maria Jose: OCR(uisng tesseract, analysing the script and converting it into meaningful output)
+- Hridhika Satheesh: Sentence BERT(analayse the similarity or correctness  of BERT outputs with the prestored data)
 
 ---
 Made with ❤️ at TinkerHub
