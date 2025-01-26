@@ -68,6 +68,8 @@ def extract_text_tesseract(image_path):
         # Perform OCR using Tesseract
         config = "--oem 3 --psm 6"  # LSTM-based OCR, treat as block of text
         text = pytesseract.image_to_string(Image.open(image_path), config=config)
+        with open("text.txt","w") as file:
+            file.write(text)
 
         print("Extracted Text:")
         print(text)

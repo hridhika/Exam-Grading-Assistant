@@ -35,6 +35,7 @@ if __name__ == "__main__":
 
 from image import preprocess_image
 from ocr_utils import extract_text_tesseract
+from grading import grade_answer
 
 def main_workflow(input_image, output_image):
     # Step 1: Preprocess the image
@@ -48,6 +49,9 @@ def main_workflow(input_image, output_image):
     if text:
         print("Final Extracted Text:")
         print(text)
+
+        grade_percentage=grade_answer(reference_answer,text)
+        print(f"Grading Result: {grade_percentage:.2f}% Correct")
     else:
         print("OCR failed to extract text.")
 
@@ -55,4 +59,5 @@ def main_workflow(input_image, output_image):
 if __name__ == "__main__":
     input_image = "input_image.jpg"
     output_image = "processed_image.jpg"
+    reference_answer = "Happy"
     main_workflow(input_image, output_image)
