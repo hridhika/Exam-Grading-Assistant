@@ -181,7 +181,9 @@ The video demonstrates an innovative solution where a handwritten note or script
 
 ## Team Contributions
 - Angelina Rose M: Front End (html,css, integrating)
+  
 -Ann Maria Jose: OCR(uisng tesseract, analysing the script and converting it into meaningful output)
+
 - Hridhika Satheesh: Sentence BERT(analayse the similarity or correctness  of BERT outputs with the prestored data)
 
 ---
