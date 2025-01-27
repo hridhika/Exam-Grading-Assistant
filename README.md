@@ -11,7 +11,7 @@
 - Member 3: Hridhika satheesh - TKMCE KOLLAM
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+https://vercel.com/hridhikas-projects/exam-grading-assistant-szgt/485tfv1yqcoViuRnNUq1RLpk2hqb
 
 ### Project Description
 The Exam Grading Assistant is a web application that automates the evaluation of handwritten answer scripts. It uses image preprocessing and OCR (Optical Character Recognition) to extract text from scanned images, providing efficient and accurate text analysis for grading purposes.
